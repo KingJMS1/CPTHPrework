@@ -1,0 +1,84 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-style: bold;
+  text-align: center;
+  color: #00dfff;
+  font-family: verdana, arial, sans-serif; 
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  text-align: center;
+}
+
+#ctrlBtnArea {
+  margin: auto;
+  text-align: center;
+}
+
+.control {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#gameBtnArea {
+  text-align: center;
+}
+
+#gameBtnArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  border-radius: 20px;
+}
+
+#gameB1 {
+  background: lightgreen;
+  border: lightgreen;
+}
+
+#gameB1:active, #gameB1.lit {
+  background: green;
+  border: green;
+}
+
+#gameB2 {
+  background: lightblue;
+  border: lightblue;
+}
+
+#gameB2:active, #gameB2.lit {
+  background: blue;
+  border: blue;
+}
+
+#gameB3 {
+  background: pink;
+  border: pink;
+}
+
+#gameB3:active, #gameB3.lit {
+  background: red;
+  border: red;
+}
+
+#gameB4 {
+  background: lightyellow;
+  border: lightyellow;
+}
+
+#gameB4:active, #gameB4.lit  {
+  background: yellow;
+  border: yellow;
+}
