@@ -46,15 +46,18 @@ I assume this is where I put the GIF:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
 I used W3 schools CSS reference in order to style some of the elements in my preferred way.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+
 I messed up the game logic so that it played the sequence back after every guess instead of after the pattern. As I was fast at entering my guesses it resulted in the sequence playing back with weird timings instead of 
 with the constant 1000 ms delay. This confused me, but I put some logging statements to see how often things were getting called and I found that playSequence was being called too often. I then reconsidered what the game 
 was supposed to do and thought about the meaning of the if statements inside of my game logic function (commenting these meanings into the function) and found that playSequence was also getting called on any correct guess.
 I removed this and made it so playSequence could only called when the sequence was actually over, thereby fixing the problem.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+
 Something I notice is that javascript on<blank> events do not necessarily all work all the time for all elements, so I would want to know why that is, and for what elements they do work. 
 Another question would be how do we make a "secure" version of this game i.e. so that the user can't just call the guess function from their console to progress the game, as well as hiding the full pattern from the user 
 until they need it. (obviously overkill for this particular purpose, but potentially useful if I were to do something requiring some level of security i.e. running an online sweepstakes or something like that) I have some
@@ -63,6 +66,7 @@ Other than that I would like to know how to make webpages look nice and also be 
 looking really good on most device shapes and sizes.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+  
 Well, I would definitely clean up the javascript mess that we made by combining certain fucntions and separating out certain functionality from other functions (e.g. combining the stop sound function and the
 unlight button function, as those two do 2 parts of the same job, might as well do the entire job at once, as it is incredibly awkward to have to queue up both functions for execution separately to stop the simulated
 button press). I would also probably try to make the interface look a bit nicer, like darken up the light colors so they don't look so washed out and see if I can find a good overall color scheme for the website
